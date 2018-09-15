@@ -1,0 +1,37 @@
+certificate格式解析
+0x0:record类型	16-handshake
+0x1:
+0x2:TLS版本
+0x3:
+0x4:后续字节长度
+0x5:此次回话类型 0B-certificate
+0x6:
+0x7:
+0x8:后续字节长度
+0x9:
+0xA:
+0xB:后续字节长度
+0xC:
+0xD:
+0xE:该字段长度
+0xF:该字段类型
+0x10:如果是8x,则后跟x位是长度，否则该字段表示长度
+
+
+遇到结束，三位表示长度
+
+ASN.1
+
+Basic Encoding Rules 基本编码规则 (BER)
+Canonical Encoding Rules 正则编码规则 (CER)
+Distinguished Encoding Rules 非典型编码规则 (DER)
+XML Encoding Rules XML编码规则 (XER)
+Canonical XML Encoding Rules (CXER)
+Extended XML Encoding Rules(E-XER)
+Packed Encoding Rules 压缩编码规则 (PER, unaligned: UPER, canonical: CPER)
+Generic String Encoding Rules (GSER)
+
+C:\Program Files\Microsoft SQL Server\MSSQL10.SQLEXPRESS\MSSQL\DATA\MS_AgentSigningCertificate.cer
+
+TLS_RSA_WITH_AES_256_CBC_SHA256
+表示密钥交换算法为TLS_RSA，块加密算法AES_256_CBC，会话校验算法为SHA256
